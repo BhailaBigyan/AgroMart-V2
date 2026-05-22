@@ -31,28 +31,28 @@ ColumnLayout {
             Item { Layout.fillWidth: true }
 
             // Search bar
-            Rectangle {
-                width: 200; height: 36
-                radius: 18
-                color: "#F5F5F5"
-                border.color: searchField.activeFocus ? "#4CAF50" : "#DDD"
-                Behavior on border.color { ColorAnimation { duration: 150 } }
-                RowLayout {
-                    anchors.fill: parent
-                    anchors.leftMargin: 12
-                    anchors.rightMargin: 12
-                    spacing: 6
-                    Text { text: "🔍"; font.pixelSize: 13; color: "#999" }
-                    TextField {
-                        id: searchField
-                        Layout.fillWidth: true
-                        placeholderText: "Search products…"
-                        background: null
-                        font.pixelSize: 13
-                        onTextChanged: searchQuery = text
-                    }
-                }
-            }
+            // Rectangle {
+            //     width: 200; height: 36
+            //     radius: 18
+            //     color: "#F5F5F5"
+            //     border.color: searchField.activeFocus ? "#4CAF50" : "#DDD"
+            //     Behavior on border.color { ColorAnimation { duration: 150 } }
+            //     RowLayout {
+            //         anchors.fill: parent
+            //         anchors.leftMargin: 12
+            //         anchors.rightMargin: 12
+            //         spacing: 6
+            //         Text { text: "🔍"; font.pixelSize: 13; color: "#999" }
+            //         TextField {
+            //             id: searchField
+            //             Layout.fillWidth: true
+            //             placeholderText: "Search products…"
+            //             background: null
+            //             font.pixelSize: 13
+            //             onTextChanged: searchQuery = text
+            //         }
+            //     }
+            // }
         }
     }
 

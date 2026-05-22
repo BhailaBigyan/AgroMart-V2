@@ -570,7 +570,7 @@ QString InventoryManager::generateBillPDF(int saleId)
     QString filename = QDir::currentPath() + "/AgroMart_Bills/Bill_" + QString::number(saleId) + "_" + safeDate + ".pdf";
 
     QPdfWriter writer(filename);
-    writer.setPageSize(QPageSize(QPageSize::A5));
+    writer.setPageSize(QPageSize(QPageSize::A4));
     writer.setResolution(300);
 
     QPainter painter(&writer);
@@ -598,7 +598,7 @@ QString InventoryManager::generateBillPDF(int saleId)
 
     painter.drawLine(100, y, 4000, y);
     painter.setFont(QFont("Arial", 16, QFont::Bold));
-    painter.drawText(100, y + 400, "Total: $" + QString::number(total, 'f', 2));
+    painter.drawText(100, y + 400, "Total: Rs. " + QString::number(total, 'f', 2));
 
     painter.end();
     return "Saved: " + filename;

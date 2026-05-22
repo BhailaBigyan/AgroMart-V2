@@ -46,31 +46,32 @@ ColumnLayout {
 
                 Item { Layout.fillWidth: true }
 
-                Rectangle {
-                    height: 34; width: 100; radius: 8
-                    color: viewProfileArea.containsMouse ? "#E3F2FD" : "white"
-                    border.color: "#90CAF9"
-                    Text { anchors.centerIn: parent; text: "👤 Profile"; font.pixelSize: 11; color: "#1976D2"; font.bold: true }
-                    MouseArea { 
-                        id: viewProfileArea; anchors.fill: parent; hoverEnabled: true
-                        onClicked: customerProfilePopup.openProfile({
-                            id: modelData.id,
-                            name: modelData.name,
-                            phone: modelData.phone,
-                            loyalty_points: modelData.loyalty_points,
-                            total_spent: modelData.total_spent
-                        })
-                    }
-                }
+            //     Rectangle {
+            //         height: 34; width: 100; radius: 8
+            //         color: viewProfileArea.containsMouse ? "#E3F2FD" : "white"
+            //         border.color: "#90CAF9"
+            //         Text { anchors.centerIn: parent; text: "👤 Profile"; font.pixelSize: 11; color: "#1976D2"; font.bold: true }
+            //         MouseArea {
+            //             id: viewProfileArea; anchors.fill: parent; hoverEnabled: true
+            //             onClicked: customerProfilePopup.openProfile({
+            //                 id: modelData.id,
+            //                 name: modelData.name,
+            //                 phone: modelData.phone,
+            //                 loyalty_points: modelData.loyalty_points,
+            //                 total_spent: modelData.total_spent
+            //             })
+            //         }
+            //     }
 
-                Rectangle {
-                    height: 34; width: 130; radius: 8
-                    color: resetPasswordArea.containsMouse ? "#EDE7F6" : "#F3E5F5"
-                    border.color: "#CE93D8"
-                    Text { anchors.centerIn: parent; text: "🔑 Reset Password"; font.pixelSize: 11; color: "#6A1B9A"; font.bold: true }
-                    MouseArea { id: resetPasswordArea; anchors.fill: parent; hoverEnabled: true
-                        onClicked: inventoryManager.resetCustomerPassword(index, "1234") }
-                }
+            //     Rectangle {
+            //         height: 34; width: 130; radius: 8
+            //         color: resetPasswordArea.containsMouse ? "#EDE7F6" : "#F3E5F5"
+            //         border.color: "#CE93D8"
+            //         Text { anchors.centerIn: parent; text: "🔑 Reset Password"; font.pixelSize: 11; color: "#6A1B9A"; font.bold: true }
+            //         MouseArea { id: resetPasswordArea; anchors.fill: parent; hoverEnabled: true
+            //             onClicked: inventoryManager.resetCustomerPassword(index, "1234") }
+            //     }
+            // }
             }
             Rectangle { anchors.bottom: parent.bottom; anchors.left: parent.left; anchors.right: parent.right; height: 1; color: "#F0F0F0" }
         }

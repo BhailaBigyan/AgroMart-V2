@@ -89,7 +89,7 @@ ColumnLayout {
                     height: 32; width: 110; radius: 6
                     color: resetPinArea.containsMouse ? "#FFF9C4" : "#FFFDE7"
                     border.color: "#F9A825"
-                    Text { anchors.centerIn: parent; text: "🔑 Reset PIN"; font.pixelSize: 11; color: "#F57F17"; font.bold: true }
+                    Text { anchors.centerIn: parent; text: "🔑 Reset Password"; font.pixelSize: 11; color: "#F57F17"; font.bold: true }
                     MouseArea { id: resetPinArea; anchors.fill: parent; hoverEnabled: true
                         onClicked: inventoryManager.resetUserPassword(index, "1234") }
                 }

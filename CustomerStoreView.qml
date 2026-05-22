@@ -70,14 +70,14 @@ RowLayout {
                 Item { Layout.fillWidth: true }
 
                 // Search
-                Rectangle {
-                    width: 200; height: 36; radius: 18; color: "#F5F5F5"; border.color: custSearch.activeFocus ? "#4CAF50" : "#DDD"
-                    RowLayout {
-                        anchors.fill: parent; anchors.leftMargin: 12; anchors.rightMargin: 12; spacing: 6
-                        Text { text: "🔍"; font.pixelSize: 13; color: "#999" }
-                        TextField { id: custSearch; Layout.fillWidth: true; placeholderText: "Search…"; background: null; font.pixelSize: 13; onTextChanged: searchQuery = text }
-                    }
-                }
+                // Rectangle {
+                //     width: 200; height: 36; radius: 18; color: "#F5F5F5"; border.color: custSearch.activeFocus ? "#4CAF50" : "#DDD"
+                //     RowLayout {
+                //         anchors.fill: parent; anchors.leftMargin: 12; anchors.rightMargin: 12; spacing: 6
+                //         Text { text: "🔍"; font.pixelSize: 13; color: "#999" }
+                //         TextField { id: custSearch; Layout.fillWidth: true; placeholderText: "Search…"; background: null; font.pixelSize: 13; onTextChanged: searchQuery = text }
+                //     }
+                // }
 
                 Rectangle {
                     height: 36; width: 90; radius: 8
