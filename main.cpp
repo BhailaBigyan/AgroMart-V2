@@ -1,3 +1,8 @@
+// Developed by: Bigyan Bhaila, Ayush Prajapati and Rujan Shrestha
+// 3rd Year Computer Science Students, Khwopa Engineering College
+// Project: AgroMart - A Smart Inventory Management System for Vegetable Sellers
+
+
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
